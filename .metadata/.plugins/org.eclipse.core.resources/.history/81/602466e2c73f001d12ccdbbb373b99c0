@@ -1,0 +1,10 @@
+package Apps;
+
+public class AlphabetDigitSpecial {
+//write a program to input any character and check whether it is alphabet,digit or special character.
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

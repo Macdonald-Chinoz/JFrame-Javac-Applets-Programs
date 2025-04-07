@@ -1,0 +1,13 @@
+package Apps;
+
+import java.util.Scanner;
+
+public class AlphabetDigitSpecial {
+//write a program to input any character and check whether it is alphabet,digit or special character.
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter any character:");
+		char ch=scanner.next().charAt(0);
+	}
+
+}

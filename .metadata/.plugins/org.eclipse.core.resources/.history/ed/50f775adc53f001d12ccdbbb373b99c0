@@ -1,0 +1,8 @@
+package Apps;
+
+public class JavaExampleOddNumbers {
+//Dislpay all even and odd numbers from 1 to 100
+	public static void main(String[] args) {
+	}
+
+}

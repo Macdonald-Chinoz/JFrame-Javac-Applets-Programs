@@ -1,0 +1,9 @@
+package Apps;
+
+public class VowelOrConsonant {
+//write a program to input any alphabet and check whether it is vowel consonant 
+	public static void main(String[] args) {
+		System.out.println("");
+	}
+
+}

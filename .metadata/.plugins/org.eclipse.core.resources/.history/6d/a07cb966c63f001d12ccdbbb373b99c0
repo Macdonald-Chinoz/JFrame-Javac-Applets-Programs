@@ -1,0 +1,9 @@
+package Apps;
+
+public class Calculator {
+//write a program to create simple calculator using switch case
+	public static void main(String[] args) {
+		
+	}
+
+}

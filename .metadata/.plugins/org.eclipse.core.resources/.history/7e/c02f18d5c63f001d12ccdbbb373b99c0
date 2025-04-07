@@ -1,0 +1,22 @@
+package Apps;
+
+import java.util.Scanner;
+
+public class Calculator {
+//write a program to create simple calculator using switch case
+	public static void main(String[] args) {
+		Scanner reader=new Scanner(System.in);
+		System.out.println("Enter two numbers:");
+		
+		double first=reader.nextDouble();
+		double second=reader.nextDouble();
+		System.out.println("Enter an operator(+,-,*,/):");
+		char operator=reader.next().charAt(0);
+		double result;
+		switch(operator)
+		{
+		
+		}
+	}
+
+}

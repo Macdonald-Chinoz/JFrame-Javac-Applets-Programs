@@ -1,0 +1,127 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.Color;
+import javax.swing.border.TitledBorder;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+
+public class BookShop extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					BookShop frame = new BookShop();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public BookShop() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 884, 492);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblTopGBook = new JLabel("TOP G BOOK SHOP");
+		lblTopGBook.setBackground(Color.GREEN);
+		lblTopGBook.setFont(new Font("Arial Black", Font.BOLD, 20));
+		lblTopGBook.setBounds(304, 11, 230, 34);
+		contentPane.add(lblTopGBook);
+		
+		JPanel panel = new JPanel();
+		panel.setBorder(new TitledBorder(null, "Registration", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		panel.setBounds(10, 59, 312, 100);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("BOOK NAME");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblNewLabel.setBounds(10, 24, 70, 14);
+		panel.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("EDITION");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblNewLabel_1.setBounds(10, 49, 70, 14);
+		panel.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("PRICE");
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblNewLabel_2.setBounds(10, 74, 70, 14);
+		panel.add(lblNewLabel_2);
+		
+		textField = new JTextField();
+		textField.setBounds(113, 21, 170, 20);
+		panel.add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(113, 46, 170, 20);
+		panel.add(textField_1);
+		textField_1.setColumns(10);
+		
+		textField_2 = new JTextField();
+		textField_2.setBounds(113, 71, 170, 20);
+		panel.add(textField_2);
+		textField_2.setColumns(10);
+		
+		JButton btnNewButton = new JButton("SAVE");
+		btnNewButton.setBounds(10, 184, 89, 23);
+		contentPane.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("EXIT");
+		btnNewButton_1.setBounds(109, 184, 89, 23);
+		contentPane.add(btnNewButton_1);
+		
+		JButton btnNewButton_2 = new JButton("CLEAR");
+		btnNewButton_2.setBounds(208, 184, 89, 23);
+		contentPane.add(btnNewButton_2);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBorder(new TitledBorder(null, "Search", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		panel_1.setBounds(10, 230, 312, 46);
+		contentPane.add(panel_1);
+		panel_1.setLayout(null);
+		
+		JLabel lblNewLabel_3 = new JLabel("BOOK ID");
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblNewLabel_3.setBounds(10, 21, 94, 14);
+		panel_1.add(lblNewLabel_3);
+		
+		textField_3 = new JTextField();
+		textField_3.setBounds(114, 15, 173, 20);
+		panel_1.add(textField_3);
+		textField_3.setColumns(10);
+		
+		JButton btnNewButton_3 = new JButton("UPDATE");
+		btnNewButton_3.setBounds(394, 253, 89, 23);
+		contentPane.add(btnNewButton_3);
+		
+		JButton btnNewButton_4 = new JButton("DELETE");
+		btnNewButton_4.setBounds(493, 253, 89, 23);
+		contentPane.add(btnNewButton_4);
+	}
+}
